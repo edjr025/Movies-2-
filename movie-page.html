@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Filmes HD</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="shortcut icon" href="img/fav icon.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+     <!--scroll progress bar-->
+     <div id="progress">
+        <span id="progress-value"></span>
+    </div>
+
+    <!--navegação-->
+    <nav class="navigation">
+      <!--menu btn-->
+      <input type="checkbox" class="menu-btn" id="menu-btn" />
+      <label for="menu-btn" class="menu-icon">
+        <span class="nav-icon"></span>
+      </label>
+
+      <!--logo-->
+      <a href="index.html" class="logo"> Filmes<span>.hd</span> </a>
+
+      <!--menu-->
+
+      <ul class="menu">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Genero</a></li>
+        <li><a href="#">TV Shows</a></li>
+        <li><a href="#">Filmes</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+
+      <form action="" class="search-box">
+        <!--input-->
+        <input
+          type="text"
+          name="pesquisa"
+          placeholder="pesquisar filme"
+          class="search-box"
+          required
+        />
+        <!--btn-->
+        <button type="submit"><i class="fas fa-search"></i></button>
+      </form>
+    </nav>
+    <!--nav end-->
+
+    <!--movie Banner-->
+    <section id="movie-banner">
+        <!--img-->
+        <div class="m-banner-img">
+            <img src="movie-data/cover.jpg" alt="">
+        </div>
+
+        <!--content-->
+        <div class="banner-container">
+          <!--title-container*******************----->
+          <div class="title-container">
+              <!--title-top===============-->
+              <div class="title-top">
+              <!--title----->
+              <div class="movie-title">
+                  <h1>Pirates of the Caribbean Salazar's Revenge</h1>
+              </div>
+              <!--more-about-movie-->
+              <div class="more-about-movie">
+                  <span class="quality">Full HD</span>
+                  <div class="rating">
+                      8.2 <img alt="imbd" src="img/IMDb-icon.png">
+                  </div>
+                  <span>28 August 2017</span>
+                  <span>87min</span>
+              </div>
+              <!--language--------->
+              <div class="language">
+                  <span>English</span>
+              </div>
+              </div>
+              <!--Title-botttom==========================-->
+              <div class="title-bottom">
+                  <!--category------->
+                  <div class="category">
+                      <strong>Category</strong><br/>
+                      <a href="#">Terror</a>,<a href="#">Misterio</a>,<a href="#">Thriller</a>
+                  </div>
+                  <!--trailer-btn---->
+                  <a href="https://www.youtube.com/watch?v=ZgQkEf3dQ08" class="watch-btn">Watch Trailer</a>
+              </div>
+          </div>
+          <!--play-btn******************************--->
+          <div class="play-btn-container">
+              <div class="play-btn">
+                  <a href="javascript:void">
+                      <i class="fas fa-play"></i>
+                  </a>
+              </div>
+          </div>
+          <!--Video/full-Movie***************************-->
+          <div id="play" class="play">
+              <!--close-btn--->
+              <a href="javascript:void" class="close-movie">
+                  <i class="fas fa-times"></i>
+              </a>
+              <!--movie------->
+              <div class="play-movie">
+                  <video id="m-video" controls>
+                      <source src="movie-data/Movie.mp4" type="video/mp4">
+                  </video>
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <!--details=====================================-->
+    <section class="movie-details">
+      <strong>Pirates of the Caribean: Salazar's Revenge</strong>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, veniam architecto, debitis quia similique adipisci autem quod eligendi delectus dolorum iusto. Eius, nobis ducimus! Corrupti nobis id itaque facere a.</p>
+  </section>
+  <!--==ScreenShots===============================-->
+  <section class="screenshots">
+      <strong>ScreenShots</strong>
+      <!--screenshots-container----------->
+      <div class="screen-s-container">
+          <img alt="" src="movie-data/screenshot-1.jpg">
+          <img alt="" src="movie-data/screenshot-2.jpg">
+          <img alt="" src="movie-data/screenshot-3.jpg">
+          <img alt="" src="movie-data/screenshot-4.jpg">
+      </div>
+  </section>
+  <!--Download====================================-->
+  <section class="download-movie">
+      <!--container----------------->
+      <div class="download-container">
+          <!--box---->
+          <div class="download-box">
+              <span><i class="fas fa-server"></i> Server 1</span>
+              <span>English</span>
+              <span>480p</span>
+              <a href="Movie-Data/Movie.mp4" download>Download</a>
+          </div>
+          <!--box---->
+          <div class="download-box">
+              <span><i class="fas fa-server"></i> Server 2</span>
+              <span>English</span>
+              <span>720p</span>
+              <a href="#">Download</a>
+          </div>
+          <!--box---->
+          <div class="download-box">
+              <span><i class="fas fa-server"></i> Server 3</span>
+              <span>English</span>
+              <span>1080p</span>
+              <a href="#">Download</a>
+          </div>
+      </div>
+  </section>
+
+  <footer>
+    <!--footer-logo--->
+    <a href="index.html" class="logo">
+        Movies<span>hd</span>
+    </a>
+    <!--copyright----->
+    <span class="copyright">
+        Copyright 2021 - GoingToInternet
+    </span>
+</footer>
+
+
+     <!--jquery-->
+     <script src="js/jQuery.js"></script>
+ 
+     <script>
+ 
+     /*scroll progress bar   */
+     let scrollPrecentage = () =>{
+         let scrollProgress = document.getElementById('progress')
+         let progressValue = document.getElementById('progress-value')
+         let pos = document.documentElement.scrollTop;
+         let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight
+         let scrollValue = Math.round(pos * 100 / calcHeight);
+         scrollProgress.style.background = `conic-gradient(#e70634 ${scrollValue}%, #2b2f38 ${scrollValue}%)`;
+         
+     }
+ 
+     window.onscroll = scrollPrecentage;
+     window.onload = scrollPrecentage;
+ 
+       /*menu-btn fixed*/
+       $(window).scroll(function(){
+           if($(document).scrollTop() > 20){
+               $('.navigation').addClass('fix-icon');
+           }
+ 
+           else{
+               $('.navigation').removeClass('fix-icon');
+           }
+       })
+
+        /*==popup-open==================================*/
+        $(document).on('click','.play-btn a',function(){
+            $('.play').addClass('active-popup');
+        });
+        /*==popup-Close==================================*/
+        $(document).on('click','.close-movie',function(){
+            $('.play').removeClass('active-popup');
+        });
+        /*==auto-play-when-popup-open===================*/
+        $('.play-btn a').click(function(){
+            $('#m-video')[0].play();
+        });
+        /*==Close-video-when-poppup-close==============*/
+        $('.close-movie').click(function(){
+            $('#m-video')[0].pause();
+        });
+     </script>
+
+
+  </body>
+  </html>
